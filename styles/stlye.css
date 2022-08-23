@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/*** GRID***/
+.contenedor{
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr;
+    grid-template-rows: 94px 600px  110px;
+    grid-template-areas:
+    "caja1  caja1   caja1"
+    "caja2  caja3   caja3"
+    "caja4  caja4   caja4"
+    ;
+}
+.contenedor2{
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr;
+    grid-template-rows: 94px 300px 300px 110px;
+    grid-template-areas: 
+    "cajas1 cajas1 cajas1"
+    "cajas2 cajas3 cajas4"
+    "cajas5 cajas6 cajas7"
+    "cajas8 cajas8 cajas8";
+}
+.cajas1{
+    grid-area: cajas1;
+}
+.cajas2{
+    grid-area: cajas2;
+    display: inline-block;
+    text-align: center;
+}
+.cajas3{
+    grid-area: cajas3;
+    text-align: center;
+}
+.cajas4{
+    grid-area: cajas4;
+    text-align: center;
+}
+.cajas5{
+    grid-area: cajas5;
+    text-align: center;
+}
+.cajas6{
+    grid-area: cajas6;
+    text-align: center;
+}
+.cajas7{
+    grid-area: cajas7;
+    text-align: center;
+}
+.cajas8{
+    grid-area: cajas8;
+    background-color: orange;
+   
+}
+
+
+
+.caja1{
+    grid-area: caja1;
+}
+.caja2{
+    grid-area: caja2;
+    text-align: center;
+}
+.caja3{
+    grid-area: caja3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.caja4{
+    grid-area: caja4;
+    background-color: orange;
+    
+}
+
+body{
+    background-color: #FBE1BB ;
+}
+/*** HEADER***/
+h1{
+    color: #7B7779;
+    font-size: 34px;
+    background-color:orangered;
+}
+header{
+    width: 100vw;
+}
+/*** MENU***/
+.menu{
+  color:beige;
+ list-style-type: none;
+ font-size: 18px;
+ padding-inline: 400px;
+ background-color: #A57E4A;
+ height: 50px;
+ 
+}
+.menu li{
+display : inline;
+margin-right: 10px;
+
+}
+.menu li a{
+    color:beige;
+}
+/*** Inicio***/
+.ini{
+    width: 200px;
+    color: orangered;
+    display: inline-block;
+    margin: 6%;
+}
+.ini a{
+    color: orangered;
+}
+.ini_imagen{ 
+    width: 100%;
+    width: 270px;
+    height: 270px;
+    border-radius: 20px;
+}
+.nuestro{
+    color: orangered;
+}
+.footer{
+    color: beige;
+}
+/*** LOCAL***/
+.Local{
+    width: 200px;
+    color: orangered;
+    display: inline-block;
+    margin: 6%;
+
+}
+.local{
+    color: orangered;
+}
+.local_imagen{
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+    
+}
+/*** PRODUCTOS***/
+
+.Pizzas{
+    width: 200px;
+    color: orangered;
+    display: inline-block;
+    margin: 6%;
+    border-radius: 10px;
+}
+.Pizza_imagen{
+    width: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.hamburgesa{
+    color: orangered;
+}
+.hamburgesas{
+    width: 200px;
+    color: orangered;
+    display: inline-block;
+    margin: 6%;
+}
+.hamburgesa_imagen{
+    width: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.pizza{
+    color: orangered;
+}
+.Pizza_parrafo{
+    background-color: orange;
+    border-radius: 0.5rem;
+    color: beige;
+}
+.Hamburgesa_parrafo{
+    background-color: orange;
+    border-radius: 0.5rem;
+    color: beige;
+} 
+/*** FOOTER***/
+.redes{
+    color: orangered;
+}
+.foter{
+    background-color: orange;
+}
+/*** CONTACTO ***/
+.contacto{
+    color: orangered;
+}
+fieldset{
+    color: orangered;
+    width: 60vw;
+}
+form{
+    width: 60vw;
+}
+.buttom{
+    background-color: orangered;
+    border:none;
+    border-radius: 5px;
+}
+/*** RECOMENDACIONES ***/
+.recomendaciones{
+    color: orangered;
+}
+.Recomendaciones{
+    width: 200px;
+    color: orangered;
+    display: inline-block;
+    margin: 6%;
+}
+.Recomendaciones_imagen{
+    width: 100%;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 480px){
+    .menu{
+        padding-inline: 50px;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .productos2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        width: 100vw;
+        }
+        .contenedor2{
+            display: flex;
+            flex-direction: column;
+        }
+        fieldset{
+            color: orangered;
+            width: 30vw;
+        }
+        form{
+            width: 30vw;
+        }
+}
+
+
+
